@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body {
+    background-image: url('../img/background.png');
+    
+}
+
+/* Contenedor de la vista*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container__main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Área de texto */
+.container__textarea {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+.container__textarea__textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+/* Botones */
+.container__buttons {
+    margin-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container__buttons__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.container__buttons__validacion {
+    margin-top: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.button__encriptar {
+    color: white;
+    background-color: black;
+}
+
+.button__desencriptar {
+    background-color: gainsboro;
+}
+
+button:hover {
+    background-color: rgb(90, 90, 234);
+}
+
+
+/* Contenedor del bloque lateral */
+.container__sidebar {
+    margin-top: 1.5%;
+    margin-bottom: 20%;
+    width: 40%;
+    /* background-color: lightblue; */
+    background-color: rgba(173, 216, 230, 0.8); /* Transparencia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(234, 238, 239);
+}
+
+.container__sidebar__texto {
+    padding-top: 15%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.container__sidebar__imagen {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.container__sidebar__imagen img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+
+    .container__main {
+        order: 2;
+    }
+
+    .container__sidebar {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .container__sidebar__texto {
+        padding-top: 2%;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        color: black;
+        text-align: center;
+    }
+
+    .container__sidebar__imagen img {
+        display: none;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .container__textarea {
+        padding-left: 5%;
+    }
+
+    textarea {
+        width: 228px;
+    }
+
+    .container__buttons {
+        padding-left: 8%;
+    }
+
+    .container__buttons__buttons {
+        padding-left: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .container__sidebar {
+        width: 88%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .container__sidebar__texto {
+        padding-top: 2%;
+    }
+
+    .button__desencriptar {
+        margin-top: 20px;
+    }
+}
+
+/* Google Fonts - Ubuntu */
+
+/* .ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+ */

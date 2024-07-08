@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+    
+    <!-- Contenedor de los elementos de la vista -->
+    <div class="container">
+        
+        <!-- Contenedor principal -->
+        <div class="container__principal">
+            
+            <!-- Textarea -->
+            <div class="container__textarea">
+                <div class="container__textarea__textarea">
+                    <textarea id="texto" name="texto" placeholder="Ingresa tu texto aquí..."></textarea>
+                </div>
+            </div>
+            
+            <!-- Botones y validación -->
+            <div class="container__buttons">
+                <div class="container__buttons__buttons">
+                    <p id="mensajeValidacion" class="container__buttons__validacion">Sólo letras minúsculas y sin acentos</p>
+                    <div>
+                        <button onclick="Encriptar()" class="button__encriptar">Encriptar</button>
+                        <button onclick="Desencriptar()" class="button__desencriptar">Desencriptar</button>
+                    </div>            
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de cuadro de texto lateral -->
+        <div class="container__sidebar">
+            <div class="container__sidebar__texto">
+                <h3 id="sidebarTitulo">Ningún mensaje fue encontrado</h3>
+                <br>
+                <p id="sidebarParrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <p id="sidebarProcesado"></p>
+            </div>
+            <div class="container__sidebar__imagen">
+                <img src="assets/img/searching.jpg" alt="Imagen buscando">            
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
